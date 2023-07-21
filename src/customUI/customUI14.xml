@@ -1,0 +1,24 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui"
+  onLoad="Ribbon_OnLoad">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabHome">
+        <group id="MyToolsGroup" label="Tools" insertBeforeMso="GroupDrawing">
+          <toggleButton id="btnToggle"
+                  label="Click me"
+                  size="large"
+                  image="icons8-interior-design-96"
+                  onAction="Button_OnAction"
+                  getPressed="Button_GetPressed"
+                  />
+            <button id="btnInvalidate"
+                  label="Invalidate Ribbon"
+                  size="large"
+                  image="icons8-refresh-96"
+                  onAction="ButtonInvalidate_OnAction"
+                  />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
